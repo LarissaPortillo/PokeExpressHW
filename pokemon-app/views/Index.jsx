@@ -7,8 +7,12 @@ const myStyle={
     backgroundColor:'#000000'
 };
 
+//capitalize first letter of name
+
+
 class Index extends React.Component{
     render(){
+        const {pokemon} = this.props;
         return(
             <html lang="en">
             <head>
@@ -20,6 +24,14 @@ class Index extends React.Component{
             <body>
                 <h1> See All the Pokemon!</h1>
                 <div style={myStyle}> 
+                <ul>
+                    {pokemon.map((pokemon,i,a)=>{
+                        let str=pokemon.name;
+                        return(
+                        <li>{str.charAt(0).toUpperCase()+str.slice(1)}</li>
+                        );
+                    })}
+                </ul>
 
                 </div>
                 

@@ -17,7 +17,7 @@ app.get('/',(req,res)=>{
 
 //using Index
 app.get('/pokemon',(req,res)=>{
-    res.render('Index');
+    res.render('Index',{pokemon:pokemon});
 });
 
 app.listen(port,()=>{
