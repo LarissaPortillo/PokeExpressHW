@@ -3,8 +3,8 @@ const React = require('react');
 
 //adding inline CSS
 const myStyle={
-    color:'#ffffff',
-    backgroundColor:'#000000'
+    border:'solid 1px',
+    borderColor:'blue',
 };
 
 //capitalize first letter of name
