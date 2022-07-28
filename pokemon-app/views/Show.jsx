@@ -1,5 +1,5 @@
 const React=require('react');
-const pokemon= require('../models/pokemon')
+
 class Show extends React.Component{
     render(){
         const pokemon = this.props.pokemon;
