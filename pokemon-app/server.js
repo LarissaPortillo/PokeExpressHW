@@ -10,14 +10,18 @@ app.get('/',(req,res)=>{
     res.send('Welcome to the Pokemon App!');
 });
 
-//not using Index
+//not using Index.jsx
 // app.get('/pokemon',(req,res)=>{
 //     res.send(pokemon);
 // })
 
-//using Index
+//using Index.jsx
 app.get('/pokemon',(req,res)=>{
     res.render('Index',{pokemon:pokemon});
+});
+
+app.get('/pokemon/:id',(req,res)=>{
+    res.send(req.params.id);
 });
 
 app.listen(port,()=>{
