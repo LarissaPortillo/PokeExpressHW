@@ -8,7 +8,7 @@ $ git clone https://github.com/yourusername/repositoryname
 ```
 Go to the project directory
 ```
-$ cd repositoryname
+$ cd repositoryname/pokemon-app
 ```
 Make sure you have nodemon installed
 ```
